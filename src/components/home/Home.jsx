@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Form, Input, Button } from 'semantic-ui-react';
 //import {db, FileSync} from 'lowdb';
 import { cpfMask } from './Mask';
+import ViaCep from 'react-via-cep'
 
 import './Home.module.css';
 
@@ -59,9 +60,7 @@ const Home = () =>{
         console.log(data)
     }
 
-    const cepOptions = [
-
-    ];
+   
 
 
     return(
@@ -112,6 +111,8 @@ const Home = () =>{
                     label="CEP"
                     width={5}
                     onChange={handleChange}
+                    maxlength="9"
+                    
                     />
                     <Form.Field
                     required
@@ -170,6 +171,6 @@ const Home = () =>{
 
         </div>
     )
-}
+};
 
 export default Home;
