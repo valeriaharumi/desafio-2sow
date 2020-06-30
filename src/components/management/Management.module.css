@@ -1,0 +1,16 @@
+.management{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5%;
+}
+
+.ui Container{
+    width: 80% !important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-top: 10% !important;
+}
